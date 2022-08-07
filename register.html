@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Register page</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+         <link href="css/register.css" rel="stylesheet"/>
+          <link href="css/signup-section.css" rel="stylesheet"/>
+           <link href="css/index-extra.css" rel="stylesheet"/>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+               <img class="img-logo" id="sucf-logo" src="assets/img/logo.png" alt="..." / style="margin-right: 1.5%;">
+                <a class="navbar-brand" href="#page-top" id="sucf" style="font-size: 25px;">Register</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" id="toggleButton" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
+                         <li class="nav-item"><a class="nav-link" href="leaders.html">Leaders</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#!" style="opacity: 1;border-bottom: 5px solid red;">Register</a>
+                         <li class="nav-item"><a class="nav-link" href="message.html" id="more">Message</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <!--<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>-->
+                        <h2 class="text-white mb-5">Regsiter with us</h2>
+                      
+                             <form class="form-signup" id="registerForm" enctype="multipart/form-data">
+                            <label for="photo">
+                                Image
+                            </label>
+                            <input type="file" name="photo" id="photo" class="contact-input" style="text-transform: lowercase !important;padding-top: 1%;" required>
+
+                            <label for="firstname">
+                                Firstname
+                            </label>
+                            <input type="text" name="firstname" id="firstname" class="contact-input" required>
+
+                            <label for="middlename">
+                                Middlename
+                            </label>
+                             <input type="text" name="middlename" id="middlename" class="contact-input" required>
+
+                             <label for="lastname">
+                                Lastname
+                            </label>
+                              <input type="text" name="lastname" id="lastname" class="contact-input" required>
+
+                              <label for="lastname">
+                                Contact
+                            </label>
+                              <input type="number" name="contact" id="contact" class="contact-input" required>
+
+                            <label for="email">
+                                Email
+                            </label>
+                             <input type="email" name="email" id="email" class="contact-input" required>
+                            <br>
+                             <input type="submit" name="submitButton" class="submitButton" id="register" value="Register">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Modal div-->
+        <div class="third" id="left">
+             <div class="inner" id="inner">
+             <div class="mid" id="mid"><img src="" class="mid-image" id="mid-image"></div>
+          <div class="info-holder" id="responseHolder"></div>
+          </div>
+      </div>
+       <!--Collapsible navabar-->
+      <div class="collapsible">
+          <ul class="my-ul">
+              <li class="lists"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="lists"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="lists"><a class="nav-link" href="events.html">Events</a></li>
+                 <li class="lists"><a class="nav-link" href="sermons.html">Sermons</a></li>
+                   <li class="lists"><a class="nav-link" href="leaders.html">Leaders</a></li>
+                  <li class="lists"><a class="nav-link" href="contact.html">Contact</a></li>
+                   <li class="lists"><a class="nav-link" href="about.html">About</a></li>
+                   <li class="lists"><a class="nav-link" href="#!"  style="opacity: 1;border-bottom: 5px solid red;">Register</a></li>
+                    <li class="lists"><a class="nav-link" href="message.html">Message</a></li>
+          </ul>
+      </div>
+        <!-- Footer-->
+         <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">
+                Copyright &copy; SUCF Website 
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </div>
+        </footer>
+      <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+         <script src="js/navbar.js"> </script>
+    </body>
+</html>
