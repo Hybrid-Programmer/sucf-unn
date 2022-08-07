@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/img/bg-signup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.iam{
+  color: white;
+    font-size: 55px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+.text{
+  color: white;
+    border-right: 2px solid rgb(62, 216, 255);
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(62, 216, 255);
+}

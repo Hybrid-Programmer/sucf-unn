@@ -1,0 +1,41 @@
+
+@media (min-width: 900px) {
+     #sucf-logo{
+      margin-right: 1.5%;
+      width: 120px;
+      height: 50px;
+     }
+
+     #sucf{
+       font-size: 35px;
+     }
+  }
+
+  @media (max-width: 320px) {
+    #sucf-logo{
+      width: 70px !important;
+    }
+
+    .navbar-brand{
+      font-size: 22px !important;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+     #sucf-logo{
+      margin-right: 2%;
+      width: 100px;
+      height: 40px;
+      margin-left: -3%;
+     }
+
+     #sucf{
+       font-size: 20px;
+     }
+  }
+
+  img{
+    border-radius: 20px;
+  }
+

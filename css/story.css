@@ -1,0 +1,357 @@
+
+    html{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+       font-family: PTSans, sans-serif;
+    }
+
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
+    #sucf-logo{
+      width: 70px !important;
+    }
+
+    .navbar-brand{
+      font-size: 22px !important;
+    }
+
+  }
+
+@media (min-width: 900px) {
+     #sucf-logo{
+      margin-right: 1.5%;
+      width: 120px;
+      height: 50px;
+     }
+
+     #sucf{
+       font-size: 35px;
+     }
+  }
+
+  @media (max-width: 900px) {
+     #sucf-logo{
+      margin-right: 2%;
+      width: 100px;
+      height: 40px;
+      margin-left: -3%;
+     }
+
+     #sucf{
+       font-size: 20px;
+     }
+  }
+
+  #sucf-logo{
+    border-radius: 20px;
+  }
+
+
+/*CSS code to make scrollbar invisible but still present*/
+::-webkit-scrollbar {
+     width: 8px; 
+     height: 20px; /* Remove scrollbar space */
+     background: gray;  /* Optional: just make scrollbar invisible */
+     border-radius: 10px;
+  }
+
+#main-section{
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-top: 23%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+}
+
+footer{
+  height: 50px;
+  background: #1f1f1f;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*CSS codes for story section*/
+
+a{
+  color: red;
+}
+
+.story-modal{
+  width: 100%;
+  height: 250px;
+ background: white;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+.media-modal{
+  width: 100%;
+  height: 300px;
+ background: white;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+.media-head{
+  width: 100%;
+  height: 20%;
+  background: transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-head{
+  width: 100%;
+  height: 25%;
+  background: transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-icon{
+  width: 25%;
+  height: 100%;
+  background: transparent;
+  border-top-left-radius: 8px;
+}
+
+.modal-image{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+}
+
+.modal-right{
+  width: 75%;
+  height: 100%;
+  background: green;
+  border-top-right-radius: 8px;
+   display: flex;
+  flex-direction: row;
+}
+
+.name-div{
+  width: 50%;
+  height: 100%;
+  color: white;
+  padding-left: 1%;
+  padding-top: 3%;
+  font-size: 20px;
+}
+
+.posted-div{
+  width: 50%;
+  height: 100%;
+  color: white;
+  padding-left: 1%;
+  padding-top: 3%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.status-div{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  margin-left: 10%;
+  margin-top: 2%;
+
+}
+
+.maintext-div{
+  width: 100%;
+  height: 75%;
+  background: transparent;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 2px solid darkslategray;
+  border-bottom: 2px solid darkslategray;
+  border-right: 2px solid darkslategray;
+}
+
+.mediacontent-div{
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 2px solid darkslategray;
+  border-bottom: 2px solid darkslategray;
+  border-right: 2px solid darkslategray;
+}
+
+.post-text{
+  width: 100%;
+  height: 80%;
+  background: transparent;
+}
+
+.media-accessories{
+  width: 100%;
+  height: 80%;
+  background: transparent;
+}
+
+.post-title, .media-title{
+  width: 100%;
+  height: 25%;
+  background: transparent;
+  text-indent: 5%;
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  padding-top: 1.5%;
+  padding-right: 2%;
+  font-weight: 450;
+}
+
+.post-content{
+  width: 100%;
+  height: 75%;
+  background: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
+.media-content{
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+}
+
+.media-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.click-div{
+  width: 100%;
+  height: 20%;
+  background: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: right;
+  padding-right: 2%;
+  position: relative;
+  z-index: 1000;
+}
+
+.read-link{
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+#read-post-section{
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+#announcements-links{
+    margin-top: 0%;
+    height: 100px;
+}
+
+/*These are CSS codes for the notification modal*/
+   .third{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:  transparent;
+            position: fixed;
+            transform: translate(-50%,-50%);
+            top: 53%;
+            left: 50%;
+            border-radius: 10px;
+            z-index: -5000;
+        }
+
+        .inner{
+            width: 85%;
+            height: 80%;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3%;
+            transition: 2s;
+            border: 3px solid darkslategray;
+        }
+
+
+        .mid{
+            width: 120px;
+            height: 120px;
+            background: transparent;
+            border-radius: 50%;
+            border: 5px solid blue;
+            opacity: 0;
+        }
+
+        .mid-image{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        .info-holder{
+            width: 90%;
+            height: 35%;
+            background: #7f877f;
+            margin-top: 5%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 3%;
+            word-spacing: 5px;
+            text-align: center !important;
+            overflow-x: hidden;
+            overflow-y: visible;
+        }

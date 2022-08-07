@@ -1,0 +1,813 @@
+
+*{
+  box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
+    #sucf-logo{
+      width: 70px !important;
+    }
+
+    .navbar-brand{
+      font-size: 22px !important;
+    }
+
+  }
+
+/*CSS codes for Index.html*/
+  @media (max-width: 350px) {
+
+     #projects12{
+      height: 800px;
+    }
+
+       #container1{
+          display: flex;
+          flex-direction: column;
+           height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        height: 350px;
+      }
+
+  }
+
+  img{
+    border-radius: 20px;
+  }
+
+
+ @media (max-width: 400px) {
+
+     #projects12{
+      height: 100px;
+    }
+
+       #container1{
+          display: flex;
+          flex-direction: column;
+           height: 100%;
+           background: transparent;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        height: 400px;
+      }
+
+  }
+
+
+   @media (max-width: 480px) {
+
+    #projects12{
+      height: 800px;
+    }
+
+       #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+      }
+
+  }
+
+   @media (max-width: 600px) {
+
+
+    #projects12{
+      height: 900px;
+    }
+
+        #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        margin-top: -2%;
+      }
+  }
+
+
+  @media (max-width: 800px) {
+
+    #projects12{
+      height: 900px;
+    }
+
+        #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        margin-top: -6%;
+      }
+  }
+
+  @media (max-width: 900px) {
+
+    #projects12{
+      height: 950px;
+    }
+
+        #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        margin-top: -6%;
+      }
+  }
+
+
+  @media (min-width: 900px) {
+
+    #projects12{
+      height: 490px;
+    }
+      #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 48%;
+        margin-right: 4%;
+      }
+
+       #upcoming-gallery{
+        width:48%;
+      }
+  }
+
+  /*End of Index.html codes*/
+
+/*img{
+  border-radius: 20px;
+}*/
+
+.img-logo{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+
+
+
+#service-h2{
+  padding-top: 5rem;
+}
+
+
+.scroll{
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
+}
+
+.upcoming{
+  width: 100%;
+  height: 420px;
+ margin-bottom: 2%;
+ border-radius: 6px;
+ background: #2e2c2c;
+ color: white;
+}
+
+#main-events{
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: 10s !important;
+}
+
+#upcoming-events{
+ margin-bottom: 10%;
+}
+
+.mains{
+  width: 100%;
+  height: 10%;
+  background: white;
+  border-radius: 6px;
+}
+
+.bar{
+ display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #64a19d;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.event-home{
+  width: 100%;
+  height: 90%;
+}
+
+.event-div{
+  width: 100%;
+  height: 100%;
+ padding-top: 0.3rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+ padding-bottom: 1% !important;
+ display: inline-block;
+}
+
+.event-image{
+  width: 100%;
+  height: 70%;
+ border-radius: 6px;
+}
+
+.event-images{
+  width: 100%;
+  height: 100%;
+ border-radius: 6px;
+}
+
+.event-text{
+  width: 100%;
+  height: 30%;
+ border-bottom-left-radius: 6px;
+ border-bottom-right-radius: 6px;
+ border-top-right-radius: none;
+ border-top-left-radius: none;
+ background: white;
+ margin-top: 0% !important;
+}
+
+.event-text1{
+  width: 100%;
+  height: 20%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+ background: #64a19d;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+
+.event-title{
+  width: 100%;
+  height: 30%;
+  background: #64a19d;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.event-time{
+  width: 100%;
+  height: 70%;
+  background: transparent;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.times-holder{
+  width: 25%;
+  background: transparent;
+}
+
+.num{
+  width: 100%;
+  height: 50%;
+  background: #2a2828;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.first{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-left-radius: 6px;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.last{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-right-radius: 6px;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.floaters{
+  width: 100%;
+  height: 10%;
+  background-image: url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons{
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 3%;
+  opacity: 0.7;
+}
+
+
+
+/*These CSS codes are for controlling the images on th index.html page*/
+
+.arrowDiv{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 45%;
+  left: 50%;
+  background: transparent;
+  padding-right: 2%;
+}
+
+.arrow{
+      position: absolute;
+      cursor: pointer;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+    /*Code to make a left-facing triangular arrow*/
+    #arrow-left{
+      border-width: 30px 35px 20px 0;
+      border-color: transparent white transparent transparent;
+      left: 0;
+      margin-left: 10px;
+    }
+     /*Code to make a right-facing triangular arrow*/
+    #arrow-right{
+      border-width: 26px 0 26px 40px;
+      border-color: transparent transparent transparent white;
+      right: 3%;
+    }
+
+    .scroll-divs{
+      padding-top: 0.3rem !important;
+      height: 90%;
+    }
+
+.event-home1{
+  width: 100%;
+  height: 90%;
+ padding-top: 0.2rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+ position: relative;
+}
+
+    .event-imagery{
+      height: 90%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+       border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+   .scroll-images{
+     width: 100%;
+     height: 100%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+       border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+
+  /*These are CSS codes for the leaders section of this website*/
+  
+
+  /*CSS codes for sermon section*/
+  #sermons-div{
+    width: 100%;
+    height: 10000px;
+    background: red;
+  }
+
+
+  /*End of sermon.html css codes*/
+
+  #about6{
+   max-height: 300px;
+  }
+
+
+  @media (min-width: 900px) {
+     #sucf-logo{
+      margin-right: 1.5%;
+      width: 120px;
+      height: 50px;
+     }
+
+     #sucf{
+       font-size: 35px;
+     }
+  }
+
+  @media (max-width: 900px) {
+     #sucf-logo{
+      margin-right: 2%;
+      width: 100px;
+      height: 40px;
+      margin-left: -3%;
+     }
+
+     #sucf{
+       font-size: 20px;
+     }
+  }
+
+  @media (max-width: 1000px) {
+
+    #projects12{
+      height: 900px;
+    }
+
+       #container11{
+        padding-top: 2%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+
+      #container11 .upcoming{
+       display: inline-block;
+       margin-right: 3%;
+      }
+
+  }
+
+/*Upcoming event section*/
+  .scroll1{
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  overflow-y: hidden;
+  overflow-x: visible;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+   .scroll1 {
+  overflow-y: visible;
+  overflow-x: hidden;
+  white-space: normal;
+  }
+
+  .upcoming{
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+   .scroll1 {
+    padding-top: 5%;
+  overflow-y: hidden;
+  overflow-x: visible;
+  white-space: nowrap;
+  }
+}
+
+.event-test{
+  background: white;
+}
+
+.event-time{
+  background: white;
+}
+
+
+@media (max-width: 990px) {
+   #toggel-button{
+     display: none;
+   }
+}
+
+
+
+/*CSS codes for gallery section*/
+
+#projects6{
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 900px) {
+
+   #gallery-scroll1 {
+      padding-top: 5%;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      white-space: nowrap;
+  }
+
+  #gallery-scroll1 div{
+     display: inline-block;
+  }
+
+}
+
+
+/*CSS codes for Index.html*/
+  @media (max-width: 350px) {
+
+     #projects12{
+      height: 800px;
+    }
+
+       #container1{
+          display: flex;
+          flex-direction: column;
+           height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        height: 350px;
+      }
+
+  }
+
+
+ @media (max-width: 400px) {
+
+     #projects12{
+      height: 100px;
+    }
+
+       #container1{
+          display: flex;
+          flex-direction: column;
+           height: 100%;
+           background: transparent;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        height: 400px;
+      }
+
+  }
+
+
+   @media (max-width: 480px) {
+
+    #projects12{
+      height: 800px;
+    }
+
+       #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+      }
+
+  }
+
+   @media (max-width: 600px) {
+
+
+    #projects12{
+      height: 900px;
+    }
+
+        #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        margin-top: -2%;
+      }
+  }
+
+
+  @media (max-width: 800px) {
+
+    #projects12{
+      height: 900px;
+    }
+
+        #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        margin-top: -6%;
+      }
+  }
+
+  @media (max-width: 900px) {
+
+    #projects12{
+      height: 950px;
+    }
+
+        #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 100%;
+      }
+
+       #upcoming-gallery{
+        width: 100%;
+        margin-top: -6%;
+      }
+  }
+
+
+  @media (min-width: 900px) {
+
+    #projects12{
+      height: 490px;
+    }
+      #container1{
+        padding-top: 2%;
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+      }
+
+        #upcoming-events{
+        width: 600px;
+        margin-right: 4%;
+      }
+
+       #upcoming-gallery{
+        width:600px;
+        margin-right: 3%;
+      }
+
+      #click{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%;
+      }
+  }
+
+  .click-div{
+    width: 100%;
+    height: 15%;
+    background: #64a19d;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+  }
+
+  .options{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #64a19d;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .option-link{
+    text-decoration: none;
+    color: white;
+  }

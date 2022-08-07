@@ -1,0 +1,1 @@
+$('#main-events').load('php/view-upcoming-timer.php');

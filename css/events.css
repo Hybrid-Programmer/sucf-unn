@@ -1,0 +1,408 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+img{
+  border-radius: 20px;
+}
+
+@media (max-width: 320px) {
+    #sucf-logo{
+      width: 70px !important;
+    }
+
+    .navbar-brand{
+      font-size: 22px !important;
+    }
+
+  }
+  
+ @media (min-width: 900px) {
+     #sucf-logo{
+      margin-right: 1.5%;
+      width: 120px;
+      height: 50px;
+     }
+
+     #sucf{
+       font-size: 35px;
+     }
+  }
+
+  @media (max-width: 900px) {
+     #sucf-logo{
+      margin-right: 2%;
+      width: 100px;
+      height: 40px;
+      margin-left: -3%;
+     }
+
+     #sucf{
+       font-size: 20px;
+     }
+  }
+
+.scroll{
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
+}
+
+.upcoming{
+  width: 100%;
+  height: 400px;
+ margin-bottom: 2%;
+ border-radius: 6px;
+ background: #2e2c2c;
+ color: white;
+}
+
+#main-events{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#upcoming-events{
+ margin-bottom: 10%;
+}
+
+.mains{
+  width: 100%;
+  height: 10% !important;
+  background: white;
+  border-radius: 6px;
+}
+
+.bar{
+ display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  height: 100% !important;
+  background: #64a19d;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.event-home{
+  width: 100%;
+  height: 90%;
+ padding-top: 0.2rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+ padding-bottom: 0.2rem !important;
+}
+
+.event-div{
+  width: 100%;
+  height: 100%;
+}
+
+.event-image{
+  width: 100%;
+  height: 70%;
+ border-radius: 6px;
+
+}
+
+.event-images{
+  width: 100%;
+  height: 100%;
+ border-radius: 6px;
+}
+
+.event-text{
+  width: 100%;
+  height: 30%;
+ border-radius: 6px;
+ background: white;
+}
+
+.event-text1{
+  width: 100%;
+  height: 20%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+ background: #64a19d;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+
+.event-title{
+  width: 100%;
+  height: 30%;
+  background: #64a19d;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+
+.event-time{
+  width: 100%;
+  height: 70%;
+  background: transparent;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.times-holder{
+  width: 25%;
+  background: transparent;
+}
+
+.num{
+  width: 100%;
+  height: 50%;
+  background: #2a2828;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.first{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-left-radius: 6px;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.last{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-right-radius: 6px;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  height: 50px !important;
+}
+
+/*These CSS codes are for controlling the images on th index.html page*/
+
+.arrowDiv{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 45%;
+  left: 50%;
+  background: transparent;
+  padding-right: 2%;
+}
+
+.arrow{
+      position: absolute;
+      cursor: pointer;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+    /*Code to make a left-facing triangular arrow*/
+    #arrow-left{
+      border-width: 30px 35px 20px 0;
+      border-color: transparent white transparent transparent;
+      left: 0;
+      margin-left: 10px;
+    }
+     /*Code to make a right-facing triangular arrow*/
+    #arrow-right{
+      border-width: 26px 0 26px 40px;
+      border-color: transparent transparent transparent white;
+      right: 3%;
+    }
+
+    .scroll-divs{
+      padding-top: 0.3rem !important;
+      height: 90%;
+    }
+
+.event-home1{
+  width: 100%;
+  height: 90%;
+ padding-top: 0.2rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+ position: relative;
+}
+
+    .event-imagery{
+      height: 95%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+       border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+   .scroll-images{
+     width: 100%;
+     height: 100%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+       border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+
+/*These are the basic screen sizes. This are the screen sizes to be used for this project and the ones to come*/
+@media (max-width: 576px) {
+ .projects-section{
+  height: 850px !important;
+ }
+
+ .event-imagery{
+  height: 90%;
+ }
+
+ .event-text1{
+  padding-left: 2%;
+ }
+}
+
+
+
+ @media (min-width: 576px) {
+  .projects-section{
+  height: 840px !important;
+  padding-top: 1%;
+ }
+
+ .event-imagery{
+  height: 90%;
+ }
+
+ .event-text1{
+  padding-left: 2%;
+ }
+
+ #upcoming-gallery{
+  margin-top: -5%;
+ }
+ 
+}
+
+
+@media (min-width: 768px) {
+  .projects-section{
+  height: 850px !important;
+ }
+
+ .event-imagery{
+  height: 90%;
+ }
+
+ .event-text1{
+  padding-left: 2%;
+ }
+  
+}
+
+
+@media (min-width: 992px) {
+  .projects-section{
+  height: 850px !important;
+  padding-top: 1%;
+ }
+
+ .event-imagery{
+  height: 90%;
+ }
+
+ .event-text1{
+  padding-left: 2%;
+ }
+
+ #upcoming-gallery{
+  margin-top: -5%;
+ }
+  
+}
+
+
+@media (min-width: 1200px) {
+  .projects-section{
+  height: 470px !important;
+  padding-top: 1%;
+ }
+
+ .scroll{
+  overflow-x: visible;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .upcoming{
+  width: 48%;
+  display: inline-block !important;
+ }
+
+ .event-imagery{
+  height: 90%;
+ }
+
+ .event-text1{
+  padding-left: 2%;
+ }
+
+  #upcoming-events{
+  margin-right: 4%;
+ }
+
+   #upcoming-gallery{
+    margin-top: -7%;
+ }
+
+}

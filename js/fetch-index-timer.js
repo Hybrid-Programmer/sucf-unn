@@ -1,0 +1,1 @@
+$('#main-events').load('php/view-index-timer.php');

@@ -1,0 +1,372 @@
+        
+		html{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			scroll-behavior: smooth;
+		}
+
+		body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			 font-family: PTSans, sans-serif;
+		}
+
+		  *{
+			box-sizing: border-box;
+		}
+
+/*CSS code to make scrollbar invisible but still present*/
+::-webkit-scrollbar {
+     width: 5px; 
+     background: gray;  /* Optional: just make scrollbar invisible */
+     border-radius: 10px;
+  }
+
+		#parent{
+			width: 100%;
+			height: 100%;
+		}
+
+		header{
+			width: 100%;
+			height: 8%;
+			background: white;
+			display: flex;
+			flex-direction: row;
+		}
+
+		#header-back{
+			width: 10%;
+			height: 100%;
+			background: green;
+			font-size: 30px;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-weight: bolder;
+		}
+
+		#header-text{
+			width: 90%;
+			height: 100%;
+			background: green;
+			font-size: 23px;
+			color: white;
+			padding-top: 4%;
+		}
+
+
+		#view-main{
+			width: 100%;
+			height: 92%;
+			background: white;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		#post-content-div{
+			width: 100%;
+			height: auto;
+			background: white;
+			padding: 2% 1%;
+		}
+
+		#media-resource-div{
+			width: 100%;
+			height: 200px;
+			background: gray;
+			border-radius: 6px;
+			margin-bottom: 2%;
+		}
+
+		#media-content-div{
+			width: 100%;
+			height: auto;
+			background: white;
+			border-radius: 6px;
+			margin-bottom: 2%;
+		}
+
+		#media-title-div{
+			width: 100%;
+			height: auto;
+			padding: 2%;
+			background: transparent;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			font-size: 20px;
+			font-weight: bold;
+			border-bottom: 2px solid gray;
+		}
+
+		#media-main-text{
+			width: 100%;
+			height: auto;
+			padding-left: 2%;
+			padding-right: 2%;
+			background: transparent;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			font-size: 20px;
+			text-indent: 5%;
+			padding-bottom: 2%;
+		}
+
+		p{
+			width: 100%;
+			height: 100%;
+		}
+
+		#like-div{
+			width: 100%;
+			height: 50px;
+			background: white;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			display: flex;
+			flex-direction: row;
+		}
+
+		#like-form{
+			width: 70%;
+			height: 100%;
+			background: gray;
+			border-bottom-left-radius: 6px;
+			padding: 1.5% 2%;
+		}
+
+		#like-button{
+			width: 50%;
+			height: 100%;
+			background: red;
+			color: white;
+			border-radius: 6px;
+			font-size: 18px;
+		}
+
+		#comment-div{
+			width: 30%;
+			height: 100%;
+			background: gray;
+			border-bottom-right-radius: 6px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#comment-button{
+			width: 90%;
+			height: 80%;
+			background: darkslategray;
+			color: white;
+			border-radius: 6px;
+			font-size: 18px;
+		}
+
+		.comment-link{
+			color: white;
+			text-decoration: none;
+		}
+
+		#comment-section{
+			width: 100%;
+			height: auto;
+			background: white;
+			border-radius: 6px;
+			display: none;
+		}
+
+		#comment-header{
+			width: 100%;
+			height: 10%;
+			background: darkslategray;
+			color: white;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+		}
+
+		#all-comments{
+			font-size: 20px;
+			padding: 2% 2%;
+		}
+
+
+		#comment-scroll-div{
+			width: 100%;
+			height: 90%;
+			background: white;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			padding: 1.5% 1%;
+		}
+
+		.comment-container{
+			width: 100%;
+			height: auto;
+			background: white;
+			border-radius: 6px;
+			margin-bottom: 4%;
+		}
+
+		.user-div{
+			width: 100%;
+			height: auto;
+			background: white;
+			border-radius: 6px;
+		}
+
+		.username-div{
+			width: 100%;
+			height: 40px;
+			background: #095951;
+			color: white;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			padding: 2% 2%;
+			overflow-x: hidden;
+			text-overflow: ellipsis;
+			font-size: 18px;
+		}
+
+		.user-comment{
+			width: 100%;
+			height: auto;
+			background: white;
+			font-size: 20px;
+			padding: 1.5% 1%;
+		}
+
+		.comment-date{
+			width: 100%;
+			height: 40px;
+			background: white;
+			font-size: 20px;
+			padding: 1.5% 1%;
+			text-align: right;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+		}
+
+		.comment-form{
+			width: 100%;
+			height: 240px;
+			background: white;
+			border-radius: 6px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.name-input{
+			width: 100%;
+			height: 20%;
+			background: transparent;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			padding-left: 1.5%;
+			font-size: 18px;
+		}
+
+		textarea{
+			width: 100%;
+			height: 60%;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			padding: 2% 2%;
+			margin-bottom: 2%;
+			font-size: 18px;
+		}
+
+		.post-comment{
+			width: 60%;
+			height: 20%;
+			background: darkslategray;
+			color: white;
+			border-radius: 6px;
+			font-size: 18px;
+		}
+
+		footer{
+			width: 100%;
+			height: 50px;
+			background: darkslategray;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 18px;
+		}
+
+		
+/*These are CSS codes for the notification modal*/
+   .third{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:  transparent;
+            position: fixed;
+            transform: translate(-50%,-50%);
+            top: 53%;
+            left: 50%;
+            border-radius: 10px;
+            z-index: -5000;
+        }
+
+        .inner{
+            width: 85%;
+            height: 80%;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3%;
+            transition: 2s;
+            border: 3px solid darkslategray;
+        }
+
+
+        .mid{
+            width: 120px;
+            height: 120px;
+            background: transparent;
+            border-radius: 50%;
+            border: 5px solid blue;
+            opacity: 0;
+        }
+
+        .mid-image{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        .info-holder{
+            width: 90%;
+            height: 35%;
+            background: #7f877f;
+            margin-top: 5%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 3%;
+            word-spacing: 5px;
+            text-align: center !important;
+            overflow-x: hidden;
+            overflow-y: visible;
+        }

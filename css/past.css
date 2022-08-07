@@ -1,0 +1,212 @@
+
+*{
+  box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
+    #sucf-logo{
+      width: 70px !important;
+    }
+
+    .navbar-brand{
+      font-size: 22px !important;
+    }
+
+  }
+
+
+@media (min-width: 900px) {
+     #sucf-logo{
+      margin-right: 1.5%;
+      width: 120px;
+      height: 50px;
+     }
+
+     #sucf{
+       font-size: 35px;
+     }
+  }
+
+  @media (max-width: 900px) {
+     #sucf-logo{
+      margin-right: 2%;
+      width: 100px;
+      height: 40px;
+      margin-left: -3%;
+     }
+
+     #sucf{
+       font-size: 20px;
+     }
+  }
+
+  img{
+    border-radius: 20px;
+  }
+
+
+
+.scroll1{
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  overflow-y: hidden !important;
+  overflow-x: visible !important;
+  white-space: nowrap;
+}
+
+
+#image-div{
+  height: 200px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ transition: 3s;
+}
+
+.upcoming{
+  width: 100%;
+  height: 400px;
+ margin-bottom: 2%;
+ border-radius: 6px;
+ background: #2e2c2c;
+ color: white;
+}
+
+#main-events{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.mains{
+  width: 100%;
+  height: 10%;
+  background: white;
+  border-radius: 6px;
+}
+
+.bar1{
+ display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #64a19d;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.event-home{
+  width: 100%;
+  height: 80%;
+ padding-top: 0.2rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.event-div{
+  width: 100%;
+  height: 100%;
+ padding-top: 0.3rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+ display: inline-block;
+ padding-bottom: 3%;
+}
+
+.event-image{
+  width: 100%;
+  height: 100%;
+ border-radius: 6px;
+ margin-bottom: 5%;
+
+}
+
+.event-images{
+  width: 100%;
+  height: 100%;
+ border-radius: 6px;
+}
+
+.event-text{
+  width: 100%;
+  height: 30%;
+ border-radius: 6px;
+ background: white;
+}
+
+.event-text1{
+  width: 100%;
+  height: 20%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+ background: #64a19d;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+
+.event-title{
+  width: 100%;
+  height: 30%;
+  background: #64a19d;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+  color: white;
+  padding-bottom: 2%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.event-time{
+  width: 100%;
+  height: 70%;
+  background: transparent;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+  /*These are CSS codes for the leaders section of this website*/
+   #projects12{
+    height: 750px;
+    padding: 0px !important;
+  }
+
+  #container11{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+@media (min-width: 1000px) {
+
+   #projects12{
+    height: 460px;
+  }
+
+  #container11{
+    height: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .upcoming{
+    width: 500px;
+    display: inline-block;
+    margin-right: 2%;
+  }
+
+  #socials{
+    padding-top: 4%;
+  }
+}

@@ -1,0 +1,284 @@
+
+*{
+  box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
+    #sucf-logo{
+      width: 70px !important;
+    }
+
+    .navbar-brand{
+      font-size: 22px !important;
+    }
+
+  }
+
+
+@media (min-width: 900px) {
+     #sucf-logo{
+      margin-right: 1.5%;
+      width: 120px;
+      height: 50px;
+     }
+
+     #sucf{
+       font-size: 35px;
+     }
+  }
+
+  @media (max-width: 900px) {
+     #sucf-logo{
+      margin-right: 2%;
+      width: 100px;
+      height: 40px;
+      margin-left: -3%;
+     }
+
+     #sucf{
+       font-size: 20px;
+     }
+  }
+
+  img{
+    border-radius: 20px;
+  }
+
+
+
+#projects12{
+  padding-left: 1%;
+  padding-right: 1%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+
+#main-events{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+
+.mains{
+  width: 100%;
+  height: 10%;
+  background: white;
+  border-radius: 6px;
+}
+
+.bar1{
+ display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #64a19d;
+  border-radius: 6px;
+}
+
+.event-home{
+  width: 100%;
+  height: 90%;
+ padding-top: 0.2rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+}
+
+.event-div{
+  width: 100%;
+  height: 100%;
+ padding-top: 1rem !important;
+ padding-left: 0.3rem !important;
+ padding-right: 0.3rem !important;
+ display: inline-block;
+}
+
+.event-image{
+  width: 100%;
+  height: 70%;
+   border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: none;
+}
+
+.event-images{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: none !important;
+  border-bottom-right-radius: none;
+}
+
+.event-text{
+  width: 100%;
+  height: 30%;
+ border-radius: 6px;
+ background: white;
+}
+
+.event-title{
+  width: 100%;
+  height: 30%;
+  background: #64a19d;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: none !important;
+  border-bottom-right-radius: none;
+}
+
+.event-time{
+  width: 100%;
+  height: 70%;
+  background: transparent;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.times-holder{
+  width: 25%;
+  background: transparent;
+}
+
+.num{
+  width: 100%;
+  height: 50%;
+  background: #2a2828;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.first{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-left-radius: 6px;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.last{
+  width: 100%;
+  height: 50%;
+  background: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-right-radius: 6px;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Upcoming event section*/
+@media (max-width: 900px) {
+
+    #projects12{
+      height: 500px;
+      overflow: hidden !important;
+    }
+
+      #container1{
+          padding-top: 0.5%;
+          height: 100%;
+      }
+
+       .event-div{
+         height: 100%;
+         display: inline-block;
+         margin-top: -2%;
+      }
+
+      .upcoming{
+        width: 100%;
+         height: 100%;
+         border-radius: 6px;
+         background: #2e2c2c;
+         color: white;
+          overflow-y: hidden;
+          overflow-x: scroll;
+          white-space: nowrap;
+      }
+
+  }
+
+
+  @media (min-width: 900px) {
+
+    #projects12{
+      height: 600px;
+    }
+      #container1{
+          padding-top: 2%;
+          height: 100%;
+      }
+
+      .event-div{
+        width: 600px;
+        display: inline-block;
+      }
+
+      .event-image{
+        height: 75%;
+        margin-bottom: 2%;
+      }
+      .event-text{
+        height: 20%;
+      }
+
+      .upcoming{
+        width: 100%;
+         height: 100%;
+         border-radius: 6px;
+         background: #2e2c2c;
+         color: white;
+         overflow-y: hidden;
+          overflow-x: scroll;
+          white-space: nowrap;
+      }
+
+      #socials{
+        padding-top: 4%;
+      }
+
+  }
