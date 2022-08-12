@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="" />
+    <!-- Font Awesome icons (free version)-->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/mains.css">
+    <title>Main Dashboard</title>
+</head>
+<body>
+    <main>
+        <!--Header scetion--->
+
+    <section class="main-section" id="main-section">
+            <div id="top-div">
+               <div class="main-logo-container"><img src="../img/logo.png" class="admin-logo" alt="Logo.png"></div>
+               <div class="main-title-container">Main Admin | Home</div>
+                <div id="add-member">+</div>
+           </div>
+
+             <!--Links section--->
+
+        <section class="link-section" id="link-container">
+
+               <div class="link-div">
+                   <div class="main-link" id="members">Members</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="leaders">Leaders</div>
+               </div>
+
+
+               <div class="link-div">
+                   <div class="main-link" id="messages">Messages</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="posts">Posts</div>
+               </div>
+
+                <div class="link-div">
+                   <div class="main-link" id="media">Media</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="events">Events</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="notifications">Notifications</div>
+               </div>
+
+        </section>
+   </section>
+
+    <!--Tabs section-->
+
+    <section class="tabs-section">
+
+         <!--Members tab-->
+
+        <div class="tab-container">
+            <div class="main-tab">
+                 <div id="members-container">
+
+                  </div>
+             </div>
+
+                <!--Section for creating members--> 
+
+                     <div class="creation-div" id="creation-div"> 
+
+                        <div class="user-type-div">
+                            <div class="choose">
+                                 <div id="choose-back"><</div>
+                                   <div class="choose-text">Choose type of admin to create</div>
+                                 </div>
+                            <div class="click-div">
+                                <div class="user-type-option" id="main-admin">Main admin</div>
+                                 <div class="user-type-option" id="sub-admin">Sub admin</div>
+                            </div>
+                        </div>
+
+                        <!--Admins creation form-->
+
+                         <form class="new-member-form" enctype="multipart/form-data" id="create-member">
+                            <div class="create" id="form-title">
+                                <div id="back"><</div>
+                                <div id="user-title"></div>
+                            </div>
+                            <label for="photo">
+                                Image
+                            </label>
+                            <input type="file" name="photo" id="photo" class="contact-input" style="text-transform: lowercase !important;padding-top: 1%;" required>
+
+                            <label for="firstname">
+                                Firstname
+                            </label>
+                            <input type="text" name="firstname" class="contact-input" required>
+
+                            <label for="middlename">
+                                Middlename
+                            </label>
+                             <input type="text" name="middlename" class="contact-input" required>
+
+                             <label for="lastname">
+                                Lastname
+                            </label>
+                              <input type="text" name="lastname" class="contact-input" required>
+
+                              <label for="lastname">
+                                Contact
+                            </label>
+                              <input type="number" name="contact" class="contact-input" required>
+
+                            <label for="email">
+                                Email
+                            </label>
+                             <input type="email" name="email" class="contact-input" required>
+
+                            <label for="password" id="password-label">
+                              Password
+                          </label>
+                             <input type="password" name="password" id="password" class="contact-input" required>
+                            <br>
+                             <input type="submit" name="submit" class="submitButton" id="create">
+                        </form>
+                         
+                     </div>   
+               </div>
+
+
+
+        <!--Leaders tab-->
+
+         <div class="tab-container">
+            <div class="leaders-home">
+                <div class="message-header">
+                     All leaders
+                   <div class="message-create" id="create-admin-leader">+</div>
+                </div>
+
+                <!--Style how each leader will be displayed in this div-->
+
+                <div class="leaders-section" id="leaders-main">
+
+                <!--List all leaders on the database in this div through the view-leaders.js file below-->
+
+                </div>
+
+                <div class="biodata-div" id="admin-biodata-div">
+                    <div class="bio-div">Back-up leaders data</div>
+                    <div class="options">
+                        <form id="backupForm">
+                             <button type="button" name="backupButton" class="option-choose" id="backup">Back-up</button>
+                              <br>
+                            <div class="option-choose" id="cancel">Cancel</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+            <!--Messages tab-->
+
+         <div class="tab-container">
+
+            <div class="message-type-div">
+                <div class="type-divs" id="all">All</div>
+                <div class="type-divs" id="admins">Admins</div>
+                <div class="type-divs" id="sub-admins">Sub-admins</div>
+            </div>
+
+             <section id="message-section">
+
+                <!--All messages div-->
+
+                <div class="message-div">
+                    <div class="message-inner">
+                         <div class="message-header">
+                            All messages
+                            <div class="message-create" id="all-create">+</div>
+                         </div>
+                         <div class="message-main">
+
+                               <!--Include the JS for listing all messages just below this comment-->
+                             
+                             <form class="messages-form" id="message-all-form">
+                                 <textarea name="message" id="message-textarea" placeholder="Type message here..."></textarea>
+                                 <div class="button-container">
+                                  <button type="submit" class="send-button" name="all-email" id="email-all">Email</button>
+                              </div>
+                             </form>
+                         </div>
+                    </div>
+                </div>
+
+                 <!--Admin messages div-->
+
+                <div class="message-div">
+                    <div class="message-inner">
+                         <div class="message-header">
+                         Admin messages
+                          <div class="message-create" id="admin-create">+</div>
+                     </div>
+                         <div class="message-main">
+
+                            <!--Include the JS for listing all admin messages just below this comment-->
+                             
+                             <form class="messages-form" id="message-admin-form">
+                                 <textarea name="message" id="message-textarea1"></textarea>
+                                 <div class="button-container">
+                                  <button type="submit" class="send-button" id="email-admins">Email</button>
+                              </div>
+                             </form>
+                         </div>
+                    </div>
+                </div>
+
+                 <!--Sub-admin messages div-->
+
+                <div class="message-div">
+                    <div class="message-inner">
+                         <div class="message-header">
+                         Sub-admin messages
+                      <div class="message-create" id="sub-admin-create">+</div>
+                  </div>
+                     <div class="message-main">
+
+                         <!--Include the JS file for listing sub-admins messages just below this comment-->
+                             
+                             <form class="messages-form" id="message-subadmin-form">
+                                 <textarea name="message" id="message-textarea2"></textarea>
+                                 <div class="button-container">
+                                  <button type="submit" class="send-button" id="email-subadmins">Email</button>
+                              </div>
+                             </form>
+                         </div>
+                    </div>
+                </div>
+            </section>
+         </div>
+
+       
+  <!--Posts tab-->
+
+  <div class="tab-container">
+
+    <!--All post page-->
+
+    <div id="post-main">
+        <div class="message-header">
+            All Posts
+           <div class="message-create" id="create-post">+</div>
+        </div>
+
+        <div id="post-container">
+                
+            <!--Post type div-->
+         <div id="post-type-div">
+             <div class="post-type" id="choose-text">Text-only post</div>
+            <div class="post-type" id="choose-multimedia">Multimedia post</div>
+         </div>
+
+        </div>
+    </div>
+
+
+
+    <!--Post creation div-->
+
+        <!--Text-post create div-->
+
+        <div class="post-create-div" id="text-only-div">
+            <div class="div-text">
+               <div id="text-post-backButton" class="backButton"><</div>
+                <div class="post-text">Create text-only post</div>
+           </div>
+
+            <div class="post-form-div">
+                <form class="post-create-form" id="text-post-form">
+                    <label class="post-label" for="category">Category</label>
+                    <input type="text" id="post-category" class="text-post" name="category">
+                    <label class="post-label" for="title">Post Title</label>
+                    <input type="text" id="post-title" class="text-post" name="title">
+                    <textarea name="text" id="post-message" placeholder="Type a post.." class="text-only-textarea"></textarea>
+                    <input type="submit" name="submitPost" class="postSubmit" id="uploadTextpost" value="Post">
+                </form>
+            </div>
+        </div>
+
+
+        <!--Multimedia post create div-->
+
+        <div class="post-create-div" id="multimedia-div">
+            <div class="div-text">
+               <div id="multimedia-backButton" class="backButton"><</div>
+                <div class="post-text">Create multimedia post</div>
+           </div>
+
+            <div class="post-form-div">
+                <form class="post-create-form" id="media-post-form" enctype="multipart/form-data">
+                    <label class="post-label" for="category">Category</label>
+                    <input type="text" class="text-post1" id="media-category" name="category">
+                    <label class="post-label" for="title">Post Title</label>
+                    <input type="text" class="text-post1" id="media-title" name="title">
+                    <label class="post-label" for="media">Add media ~video, image...</label>
+                    <input type="file" class="text-post" name="media" id="media-file">
+                    <br>
+                    <textarea placeholder="Type a post.." id="media-textPost" class="text-only-textarea1" name="post"></textarea>
+                    <input type="submit" name="submitPost" id="mediaSubmit" class="postSubmit" value="Post">
+                </form>
+            </div>
+        </div>
+
+
+   <!--Text post edit div-->
+
+      <div  id="text-post-edit-div">
+
+            <div class="post-edit-header">
+                <div class="post-edit-backButton" id="post-edit-back"><b class="back-bold"><</b></div>
+                <div class="post-edit-hometext">Read post</div>
+                <span class='text-post-edit-icon'><i class='fa fa-edit' id="edit-post"></i></span>
+          </div>
+
+          <form class="text-edit-form" id="text-edit-form">
+            <div class="title-parent-div">
+                <div class="post-title-container">Title</div>
+                <div class="text-post-title-textarea" contenteditable="false"></div>  
+            </div>
+            <input type="hidden" name="title" id="editedTextTitle" value="">
+
+            <div class="post-parent-div">
+                <div class="post-title-container">Post</div>
+                <div class="post-textarea" contenteditable="false"></div>
+            </div>
+             <input type="hidden" name="post" id="editedTextPost" value="">
+             <input type="hidden" name="id" id="postIdField" value=""> 
+             <button type="submit" class="update-text-button" id="updateTextPost">Update</button>
+
+    <!--Text comment section. Here, ONLY the main admin can either approve or delete comments-->
+
+             <div class="comments-div">
+
+                  <div class="comment-total-div">
+                     <div class="comment-total-header">
+                         All <!--10 This will be counted by PHP -->comments
+                    </div>
+                    <div class="comment-approve-div">
+                         <button type="button" class="approve-all-button">Approve all</button>
+                    </div>
+                </div>
+
+                 <div class="comments-container">
+
+              </div>
+         </div>
+    </form>
+ </div>
+
+
+
+       <!--Media post edit div-->
+
+       <div id="media-post-edit-div">
+
+            <div class="post-edit-header">
+                <div class="post-edit-backButton" id="media-edit-back"><b class="back-bold"><</b></div>
+                <div class="post-edit-hometext">View post</div>
+                <span class='text-post-edit-icon'><i class='fa fa-edit' id="edit-media"></i></span>
+          </div>
+
+          <form class="text-edit-form" id="media-edit-form" enctype="multipart/form-data">
+            <div class="title-parent-div">
+                <div class="post-title-container">Title</div>
+                <div class="text-post-title-textarea" contenteditable="false"> </div>
+            </div>
+            <input type="hidden" name="title" id="editedMediaTitle" value="">
+
+            <div class="media-image-parent">
+                <div class="image-holder"><img src="" class="actual-media-image" alt="Image"></div>
+                <div class="image-edit-section">
+                    <input type="file" name="newMedia" class="image-edit-file-button" value="">
+                </div>
+            </div>
+
+            <div class="post-parent-div">
+                <div class="post-title-container">Post</div>
+                <div class="post-textarea" contenteditable="false"></div>
+            </div>
+             <input type="hidden" name="post" id="editedMediaPost" value="">
+              <input type="hidden" name="id" id="mediaIdField" value="">
+             <button type="submit" class="update-text-button" id="updateMediaPost">Update</button>
+
+    <!--Media comment section. Here, ONLY the main admin can either approve or delete comments-->
+
+             <div class="comments-div">
+
+                  <div class="comment-total-div">
+                     <div class="comment-total-header">
+                         All <!--10 This will be counted by PHP -->comments
+                    </div>
+                    <div class="comment-approve-div">
+                         <button type="button" class="approve-all-button">Approve all</button>
+                    </div>
+                </div>
+
+                 <div class="comments-container" id="comments-container">
+
+              </div>
+          </div>
+      </form>
+   </div>
+</div>
+
+
+
+<!--Media tab-->
+
+<div class="tab-container">
+
+ <div class="media-type-div">
+    <div class="type-divs1" id="audio-tab">Audio</div>
+    <div class="type-divs1" id="video-tab">Videos</div>
+    <div class="type-divs1" id="document-tab">Documents</div>
+</div>
+
+
+<section id="media-section">
+
+    <!--Audio media-->
+
+    <div class="media-div" id="audio-parent">
+        <div class="media-inner">
+             <div class="media-header">
+                All audios
+                <div class="media-create" id="audio-create">+</div>
+             </div>
+             <div class="media-main" id="audio-container">
+
+                <form class="upload-form" id="audio-upload-form" enctype="multipart/form-data">
+                     <input type="file" name="audio" id="audio-input">
+                     <input type="hidden" name="date" id="audio-date">
+                     <div class="button-container">
+                      <input type="submit" class="send-button" value="Upload">
+                  </div>
+                 </form>
+             </div>
+        </div>
+    </div>
+
+    <!--Video media-->
+
+    <div class="media-div" id="video-parent">
+        <div class="media-inner">
+             <div class="media-header">
+                All Videos
+                <div class="media-create" id="video-create">+</div>
+             </div>
+             <div class="media-main" id="video-container">
+                
+            <form class="upload-form" id="video-upload-form" enctype="multipart/form-data">
+                 <input type="file" name="video" id="video-input">
+                 <div class="button-container">
+                  <input type="submit" class="send-button" value="Upload">
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+                
+    <!--Document media-->
+
+    <div class="media-div" id="documents-parent">
+        <div class="media-inner">
+             <div class="media-header">
+                All documents
+                <div class="media-create" id="image-create">+</div>
+             </div>
+             <div class="media-main" id="document-container">
+
+            </div>
+                 
+                 <form class="upload-form" id="document-upload-form" enctype="multipart/form-data">
+                     <input type="file" name="document" id="document-input">
+                     <div class="button-container">
+                      <button type="submit" class="send-button">Upload</button>
+                  </div>
+                 </form>
+             </div>
+        </div>
+</section>
+</div>
+
+
+
+<!--Events tab-->
+
+<div class="tab-container">
+
+    <!--Event home-->
+
+    <div class="event-div">
+        <div class="event-inner">
+             <div class="media-header">
+                All events
+                <div class="media-create" id="event-create">+</div>
+             </div>
+             <div class="event-main" id="event-container">
+
+ 
+             </div>
+        </div>
+    </div>
+
+    <!--Event creation div-->
+
+    <div class="event-creation-div">
+        <div class="creation-header">
+            Create event countdown
+           <div class="event-create" id="event-close">X</div>
+        </div>
+
+         <div class="creation-main">
+             <form class="event-creation-form" id="event-creation-form">
+                <label for="event-image">Choose event image</label>
+                <input type="file" name="eventImage" class="event-file" required>
+                 <label for="eventTitle">Event title</label>
+                <input type="text" name="eventTitle" class="event-input" placeholder="Enter event title" required>
+                <label for="eventDate">Event date</label>
+                <input type="text" name="eventDate" class="event-input" placeholder="Jan 10, 2022" required>
+                <label for="eventHour">Event hour</label>
+                <input type="number" name="eventHour" id="event-hour" class="event-numbers" maxlength="2" placeholder="Enter values between 00 - 23" required>
+                <label for="eventMinute">Event minute</label>
+                <input type="number" name="eventMinute" class="event-numbers" maxlength="2" placeholder="Enter values between 00 - 59" required>
+                <label for="eventSecond">Event second</label>
+                <input type="number" name="eventSecond" class="event-numbers" maxlength="2" placeholder="Enter values between 00 - 59" required>
+                <button type="submit" class="create-event" id="createTimer">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <!--Notifications tab-->
+
+    <div class="tab-container" id="notification-container"></div>
+
+ </section>
+
+    <!--Modal div-->
+    <div class="third" id="left">
+         <div class="inner" id="inner">
+         <div class="mid1" id="mid"><img src="" class="mid-image" id="mid-image" alt="modal-image"></div>
+      <div class="info-holder" id="responseHolder"></div>
+      </div>
+  </div>
+  
+</main>
+
+<!--Tested but still being worked on-->
+<script  src="js/jQuery.js"></script>
+<script  src="js/main-admin-controls.js"></script>
+<script  src="js/load-files.js"></script>
+<script  src="js/change-user-role.js"></script>
+<script  src="js/backup-data.js"></script>
+<script  src="js/email-all.js"></script>
+<script  src="js/email-admins.js"></script>
+<script  src="js/email-subadmins.js"></script>
+<script  src="js/upload-media-post.js"></script>
+<script  src="js/upload-textpost.js"></script>
+<script  src="js/delete-post.js"></script>
+<script  src="js/edit-all-posts.js"></script>
+<script  src="js/publish-post.js"></script>
+<script  src="js/approve-comments.js"></script>
+<script  src="js/delete-comments.js"></script>
+<script  src="js/admin-document-upload.js"></script>
+<script  src="js/admin-video-upload.js"></script>
+<script  src="js/admin-audio-upload.js"></script>
+<script  src="js/delete-document.js"></script>
+<script  src="js/delete-audio.js"></script>
+<script  src="js/delete-video.js"></script>
+<script  src="js/check-events-inputs.js"></script>
+<script  src="js/create-timer.js"></script>
+<script  src="js/delete-notification.js"></script>
+
+<!--End-->
+
+
+</body>
+</html>
